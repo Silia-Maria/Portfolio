@@ -5,6 +5,20 @@
 
 
 /* 
+-----------------
+General Styles 
+-----------------
+*/
+
+.thin-heading {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 150%;
+    color: #B2B2B2
+}
+
+
+/* 
 ----------------
 Logo
 ----------------
@@ -57,7 +71,7 @@ Hero
  */
 
 .hero-image {
-    width: 60%;
+    width: 65%;
     height: 20%;
 }
 
@@ -66,12 +80,53 @@ img {
     object-fit: cover;
 }
 
+.name {
+    color: #a4c3b2;
+}
+
+
+/* 
+----------------
+About
+----------------
+ */
+
+.about-container {
+    margin: 5rem 8rem;
+    padding: 3rem;
+}
+
+.about-img {
+    width: 100%;
+}
+
+
+/*
+----------------
+Image-section
+----------------
+*/
+
+.image-section {
+    width: 100%;
+    padding: 20%;
+    background-image: url(../images/image-section1.JPG);
+    background-position: 80% 100%;
+    background-attachment: fixed;
+}
+
 
 /* 
 ----------------
 Service
 ----------------
  */
+
+.bg-services {
+    background-color: #a4c3b2;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 .service-box {
     padding: 8rem 0;
@@ -98,22 +153,63 @@ Portfolio
     transition: 0.5s;
 }
 
-.item .description {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 1rem 0;
-    top: 30%;
-    text-align: center;
-    background-color: hsla(320, 74%, 0%, 0.62);
-    color: white;
-    visibility: hidden;
-}
-
 .item:hover {
     transform: scale(1.2);
     transition: 0.3s;
-    opacity: 0.8;
+}
+
+.description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    background-color: hsla(320, 74%, 0%, 0.62);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: visability 0.25s;
+}
+
+.description>* {
+    transform: translateY(30px);
+    transition: transform 0.25s;
+}
+
+.item:hover .description {
+    visibility: visible;
+}
+
+.description:hover>* {
+    transform: translateY(0);
+}
+
+.live-site {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 80%;
+}
+
+
+/* 
+------------------
+Technologie
+-----------------
+*/
+
+.tech {
+    padding: 3rem 0;
+    color: #B2B2B2;
+    transition: 0.5s;
+}
+
+.tech div:hover {
+    transition: 0.5s;
+    color: black;
 }
 
 

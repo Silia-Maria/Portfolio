@@ -1,17 +1,21 @@
 const projects = [{
         name: "Foodblog",
-        img: "foodblog.jpg"
+        img: "foodblog.jpg",
+        url: "path"
     },
     {
         name: "Restaurant Website",
-        img: "restaurant.jpg"
+        img: "restaurant.jpg",
+        url: "path"
     },
     {
         name: "Angular Project",
-        img: "angular.jpg"
+        img: "angular.jpg",
+        url: "path"
     },
     {
         name: "Car Rental",
-        img: "car-rental.jpg"
+        img: "car-rental.jpg",
+        url: "path"
     }
 ]
