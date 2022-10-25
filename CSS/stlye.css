@@ -4,11 +4,14 @@
 }
 
 
-/* Logo */
+/* 
+----------------
+Logo
+----------------
+ */
 
 .logo-box {
-    margin-bottom: 2rem;
-    border: 1px solid red;
+    padding: 1rem;
 }
 
 .letter1 {
@@ -21,7 +24,7 @@
     position: absolute;
     width: 100%;
     top: -50%;
-    left: 2.5%;
+    left: 54%;
 }
 
 .letter1,
@@ -31,9 +34,41 @@
 }
 
 
-/* Navbar */
+/* 
+---------------
+Nav-Bar
+---------------
+ */
 
-a {
+.primary-nav a {
     color: black;
     margin: 0 2rem;
+}
+
+
+/* 
+----------------
+Hero
+----------------
+ */
+
+.hero {
+    width: 60%;
+    height: 20%;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* 
+----------------
+Footer
+----------------
+ */
+
+.small-text {
+    font-size: 70%;
 }
