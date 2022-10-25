@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Logo */
+
+.logo-box {
+    margin-bottom: 2rem;
+    border: 1px solid red;
+}
+
+.letter1 {
+    position: relative;
+    width: auto;
+    padding-left: 3rem;
+}
+
+.letter2 {
+    position: absolute;
+    width: 100%;
+    top: -50%;
+    left: 2.5%;
+}
+
+.letter1,
+.letter2 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+
+/* Navbar */
+
+a {
+    color: black;
+    margin: 0 2rem;
+}
