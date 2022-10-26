@@ -4,6 +4,11 @@
 }
 
 
+/* COLORS 
+green: #a4c3b2,
+grey: #B2B2B2,
+
+
 /* 
 -----------------
 General Styles 
@@ -14,8 +19,126 @@ General Styles
     font-weight: 100;
     text-transform: uppercase;
     font-size: 150%;
-    color: #B2B2B2
+    color: #B2B2B2;
 }
+
+
+/* 
+-----------------
+Scroll Button
+-----------------
+*/
+
+.progressBar {
+    display: inline-block;
+    height: 2px;
+    background-color: grey;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.scrollBtn {
+    position: absolute;
+    display: block;
+    display: none;
+}
+
+.text {
+    bottom: 35%;
+    right: 0;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: fixed;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    /* transform-origin: center; */
+}
+
+
+/* needed this!!!
+/* .scrollBtn {
+    position: fixed;
+    right: 0; */
+
+
+/* bottom: 200px; */
+
+
+/* transform-origin: 0 0; --> did something */
+
+
+/* transform: rotateZ(90deg);
+    white-space: nowrap;
+    border: 1px solid red;
+    z-index: 99;
+} */
+
+
+/* .scrollBtn .text {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+} */
+
+
+/* didnt need
+
+
+/* .outerProgress {
+    display: inline;
+    background-color: rgba(0, 0, 0, .08);
+    transform: rotateZ(90deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    width: 100px;
+    height: 20px;
+    border: 1px solid red;
+} */
+
+
+/* needed this!!!!!
+
+/* .progressBar {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    height: 2px;
+    width: 0%;
+    background: black;
+    z-index: 100;
+    transform: rotateZ(180deg);
+    transition: all .3s ease;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.outerProgress {
+    position: relative;
+    height: 10px;
+    background-color: red;
+} */
+
+
+/* ---->  didn't need!!!!!
+
+/* .progressBar {
+    position: fixed;
+    right: 0;
+    bottom: 200px;
+    height: 8px;
+    width: 0%;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    transform-origin: 0 0;
+    transform: rotateZ(90deg);
+    white-space: nowrap;
+    z-index: 100;
+    transition: width 0.2s ease-out;
+} */
 
 
 /* 
@@ -57,6 +180,7 @@ Nav-Bar
     color: black;
     margin: 0 2rem;
     padding: 0 0.5rem 0.3rem;
+    text-decoration: none;
 }
 
 .primary-nav li a:hover {
@@ -205,11 +329,41 @@ Technologie
     padding: 3rem 0;
     color: #B2B2B2;
     transition: 0.5s;
+    margin-bottom: 5rem;
 }
 
 .tech div:hover {
     transition: 0.5s;
     color: black;
+}
+
+
+/* 
+----------------
+Contact
+----------------
+ */
+
+.input-fields {
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.form-button {
+    width: 100%;
+    border-radius: 0;
+}
+
+.info-box {
+    width: 100%;
+}
+
+.info-box:hover {
+    color: #a4c3b2;
 }
 
 
@@ -225,6 +379,8 @@ Footer
 
 .small-text a {
     margin: 0 6rem;
+    text-decoration: none;
+    color: white;
 }
 
 

@@ -16,216 +16,265 @@
 </head>
 
 <body>
-    <!-- 
+
+    <section>
+        <!-- 
 ----------------------------------   
 Nav bar:
 Home,  Skills, Projects, Contact
 ----------------------------------
 -->
 
-    <div class="nav d-flex border-bottom border-dark align-items-baseline primary-nav sticky-top">
+        <div class="nav d-flex border-bottom border-dark align-items-baseline primary-nav sticky-top">
 
-        <!-- Logo -->
-        <div class="logo-box">
-            <div class="letter1">S
-                <div class="letter2">C</div>
+            <!-- Logo -->
+            <div class="logo-box">
+                <div class="letter1">S
+                    <div class="letter2">C</div>
+                </div>
             </div>
+
+            <!-- Nav-Items -->
+            <ul class="nav ms-5">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
 
-        <!-- Nav-Items -->
-        <ul class="nav ms-5">
-            <li>
-                <a>Home</a>
-            </li>
-            <li>
-                <a>Skills</a>
-            </li>
-            <li>
-                <a>Projects</a>
-            </li>
-            <li>
-                <a>Contact</a>
-            </li>
-        </ul>
-    </div>
+        <!-- 
+---------------------------
+Scroll back to Top Button
+---------------------------
+-->
+        <div class="scrollBtn">
+            <a class="text text-dark button" href="">
+                <span>To Top</span>
+                <div class="progressBar border border-dark"></div>
 
+            </a>
+        </div>
 
-    <!-- 
+        <!-- 
 ---------------
     Hero 
 ---------------    
 -->
-    <div class="d-flex border-bottom border-dark justify-content-between">
-        <div class="col-3 align-self-center ps-5 name">
-            <h1 class="text-uppercase"> Silia Cronauer</h1>
-            <p>Indipendent Web Developer</p>
+        <div class="d-flex border-bottom border-dark justify-content-between">
+            <div class="col-3 align-self-center ps-5 name">
+                <h1 class="text-uppercase"> Silia Cronauer</h1>
+                <p>Indipendent Web Developer</p>
 
+            </div>
+            <div class="hero-image col-8 border border-dark border-top-0 border-bottom-0">
+                <img src="../images/IMG_2415.jpg">
+            </div>
         </div>
-        <div class="hero-image col-8">
-            <img src="../images/IMG_2415.jpg">
-        </div>
-    </div>
 
 
-    <!-- 
+        <!-- 
 --------------------    
    About
 --------------------    
 -->
-    <div class="about-container">
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="about-img">
-                    <img src="../images/IMG_3934.JPG" alt="">
+        <div class="about-container" id="about">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-img">
+                        <img src="../images/IMG_3934.JPG" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 align-self-end text-end mb-5 p-5">
+                    <p class="thin-heading"> About me</p>
+                    <h3 class="mb-4">Hey I'm Silia!</h3>
+                    <p> I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of
+                        the design process, from discussion and collaboration.</p>
+                    <a href="" class="text-uppercase text-dark">Download CV</a>
                 </div>
             </div>
-            <div class="col-lg-7 align-self-end text-end mb-5 p-5">
-                <p class="thin-heading"> About me</p>
-                <h3 class="mb-4">Hey I'm Silia!</h3>
-                <p> I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the
-                    design process, from discussion and collaboration.</p>
-                <a href="" class="text-uppercase text-dark">Download CV</a>
-            </div>
         </div>
-    </div>
-    <!-- 
+        <!-- 
 --------------------    
     Services 
 --------------------    
 -->
-    <div class="bg-services">
-        <div class="container service-box">
-            <div class="row d-flex justify-content-between text-center">
-                <div class="col-lg-4 col-sm-12 px-4">
-                    <h2>01</h2>
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 px-4">
-                    <h2>02</h2>
-                    <h3>Front-End Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 px-4">
-                    <h2>03</h2>
-                    <h3>Back-End Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
+        <div class="bg-services" id="skills">
+            <div class="container service-box">
+                <div class="row d-flex justify-content-between text-center">
+                    <div class="col-lg-4 col-sm-12 px-4">
+                        <h2>01</h2>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-4">
+                        <h2>02</h2>
+                        <h3>Front-End Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-4">
+                        <h2>03</h2>
+                        <h3>Back-End Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- 
+        <!-- 
 --------------------    
 Image Section
 ---------------------
 -->
-    <div class="image-section">
+        <div class="image-section">
 
-    </div>
+        </div>
 
 
-    <!-- 
+        <!-- 
 --------------------    
     Projects 
 ---------------------
 -->
 
-    <!-- Project Section -->
+        <!-- Project Section -->
+        <div class="container my-5" id="projects">
+            <p class="thin-heading">Portfolio</p>
+            <h3 class="mb-5">Recent Projects</h3>
+            <!-- Grid going to be a loop in JS-->
+            <div class="portfolio">
 
-
-    <div class="container my-5">
-        <p class="thin-heading">Portfolio</p>
-        <h3 class="mb-5">Recent Projects</h3>
-        <!-- Grid -->
-        <div class="portfolio">
-            <div class="item">
-                <img src="../images/foodblog.jpg" alt="">
-                <div class="description">
-                    <h4>Foodblog</h4>
-                    <a class="live-site" href="">See Live Site</a>
+                <div class="item">
+                    <img src="../images/foodblog.jpg" alt="">
+                    <div class="description">
+                        <h4>Foodblog</h4>
+                        <a class="live-site" href="">See Live Site</a>
+                    </div>
                 </div>
+
+                <div class="item">
+                    <img src="../images/foodblog.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../images/foodblog.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../images/foodblog.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../images/foodblog.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../images/foodblog.jpg" alt="">
+                </div>
+
             </div>
-            <div class="item">
-                <img src="../images/foodblog.jpg" alt="">
+        </div>
+
+        <!-- Technologies -->
+        <div class="tech d-flex justify-content-around text-uppercase border-bottom border-dark">
+            <div class="text-center"><i class="fa-brands fa-html5 fs-2"></i>
+                <p>html5</p>
             </div>
-            <div class="item">
-                <img src="../images/foodblog.jpg" alt="">
+            <div class="text-center"><i class="fa-brands fa-css3-alt fs-2"></i>
+                <p>css</p>
             </div>
-
-
-
-
-            <div class="item">
-                <img src="../images/foodblog.jpg" alt="">
+            <div class="text-center"><i class="fa-brands fa-sass fs-2"></i>
+                <p>scss</p>
             </div>
-            <div class="item">
-                <img src="../images/foodblog.jpg" alt="">
+            <div class="text-center"><i class="fa-brands fa-bootstrap fs-2"></i>
+                <p>Bootstrap</p>
             </div>
-            <div class="item">
-                <img src="../images/foodblog.jpg" alt="">
+            <div class="text-center"><i class="fa-brands fa-square-js fs-2"></i>
+                <p>Java-script</p>
             </div>
+            <div class="text-center"><i class="fa-brands fa-angular fs-2"></i>
+                <p>Angular</p>
+            </div>
+        </div>
 
-        </div>
-    </div>
-
-    <!-- Technologies -->
-    <div class="tech d-flex justify-content-around text-uppercase">
-        <div class="text-center"><i class="fa-brands fa-html5 fs-2"></i>
-            <p>html5</p>
-        </div>
-        <div class="text-center"><i class="fa-brands fa-css3-alt fs-2"></i>
-            <p>css</p>
-        </div>
-        <div class="text-center"><i class="fa-brands fa-sass fs-2"></i>
-            <p>scss</p>
-        </div>
-        <div class="text-center"><i class="fa-brands fa-bootstrap fs-2"></i>
-            <p>Bootstrap</p>
-        </div>
-        <div class="text-center"><i class="fa-brands fa-square-js fs-2"></i>
-            <p>Java-script</p>
-        </div>
-        <div class="text-center"><i class="fa-brands fa-angular fs-2"></i>
-            <p>Angular</p>
-        </div>
-    </div>
-
-    <!--
+        <!--
 --------------------    
     Contact
 --------------------
 -->
+        <div class="container mb-5" id="contact">
+            <p class="thin-heading">Contact</p>
+            <h3 class="mb-5">Get in Touch</h3>
+
+            <div class="d-flex row justify-content-between">
+                <!--Form-->
+                <form class="mb-5  col-lg-5 col-md-12 col-sm-12">
+                    <input type="text" placeholder="Name" class="input-fields p-2">
+                    <input type="email" name="" id="" placeholder="Email" class="input-fields p-2">
+                    <textarea name="Message" id="" cols="30" rows="5" placeholder="Message" class="input-fields p-2"></textarea>
+                    <button type="button" class="btn btn-outline-dark form-button text-uppercase mt-5">Send</button>
+                </form>
 
 
+                <!--Information-->
+                <div class="mt-2 col-lg-5 col-md-12 col-sm-12">
+                    <div class="text-center mb-5 py-4 border border-dark info-box">
+                        <i class="fa-solid fa-location-dot mb-2"></i>
+                        <p class="mb-0">Burggasse 102, Vienna</p>
+                    </div>
+
+                    <div class="text-center mb-5 py-4 border border-dark info-box">
+                        <i class="fa-solid fa-phone-flip mb-2"></i>
+                        <p class="mb-0">+43 660 2252867</p>
+                    </div>
+
+                    <div class="text-center py-4 border border-dark info-box">
+                        <i class="fa-solid fa-circle-nodes mb-2"></i>
+                        <div>
+                            <i class="fa-brands fa-instagram me-3"></i>
+                            <i class="fa-brands fa-linkedin-in me-3"></i>
+                            <i class="fa-brands fa-github me-3"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- 
 -----------------
 Footer 
 -----------------
 -->
-    <div class="bg-black text-light py-4">
-        <div class="text-center">
-            <i class="fa-brands fa-instagram me-3"></i>
-            <i class="fa-brands fa-linkedin-in me-3"></i>
-            <i class="fa-brands fa-github me-3"></i>
-            <i class="fa-regular fa-envelope"></i>
-        </div>
-        <ul class="nav d-flex justify-content-center mt-3 small-text">
+    <div class="bg-black py-4">
+        <ul class="nav d-flex text-light justify-content-center mt-3 small-text">
             <li>
-                <a>Home</a> |
+                <a href="">Home</a> |
             </li>
             <li>
-                <a>Skills</a> |
+                <a href="#about">About</a> |
             </li>
             <li>
-                <a>Projects</a> |
+                <a href="#skills">Skills</a> |
             </li>
             <li>
-                <a>Contact</a>
+                <a href="projects">Projects</a> |
+            </li>
+            <li>
+                <a href="contact">Contact</a>
             </li>
         </ul>
-        <p class="text-center mt-5 small-text ">&copy; Silia Cronauer 2022</p>
+        <p class="text-center mt-5 small-text text-light">&copy; Silia Cronauer 2022</p>
     </div>
 
     <!-- My Script -->
