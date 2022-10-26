@@ -58,89 +58,6 @@ Scroll Button
 }
 
 
-/* needed this!!!
-/* .scrollBtn {
-    position: fixed;
-    right: 0; */
-
-
-/* bottom: 200px; */
-
-
-/* transform-origin: 0 0; --> did something */
-
-
-/* transform: rotateZ(90deg);
-    white-space: nowrap;
-    border: 1px solid red;
-    z-index: 99;
-} */
-
-
-/* .scrollBtn .text {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-} */
-
-
-/* didnt need
-
-
-/* .outerProgress {
-    display: inline;
-    background-color: rgba(0, 0, 0, .08);
-    transform: rotateZ(90deg);
-    transform-origin: 0 0;
-    white-space: nowrap;
-    width: 100px;
-    height: 20px;
-    border: 1px solid red;
-} */
-
-
-/* needed this!!!!!
-
-/* .progressBar {
-    position: fixed;
-    left: 0;
-    top: 100px;
-    height: 2px;
-    width: 0%;
-    background: black;
-    z-index: 100;
-    transform: rotateZ(180deg);
-    transition: all .3s ease;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-
-.outerProgress {
-    position: relative;
-    height: 10px;
-    background-color: red;
-} */
-
-
-/* ---->  didn't need!!!!!
-
-/* .progressBar {
-    position: fixed;
-    right: 0;
-    bottom: 200px;
-    height: 8px;
-    width: 0%;
-    background: linear-gradient(to right, #ff5f6d, #ffc371);
-    transform-origin: 0 0;
-    transform: rotateZ(90deg);
-    white-space: nowrap;
-    z-index: 100;
-    transition: width 0.2s ease-out;
-} */
-
-
 /* 
 ----------------
 Logo
@@ -263,23 +180,17 @@ Portfolio
 ----------------
  */
 
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
 .item {
     position: relative;
     width: 100%;
     padding: 1rem;
-    margin-bottom: 2rem;
     transition: 0.5s;
 }
 
 .item:hover {
     transform: scale(1.2);
     transition: 0.3s;
+    z-index: 99;
 }
 
 .description {
@@ -378,7 +289,7 @@ Footer
 }
 
 .small-text a {
-    margin: 0 6rem;
+    /* margin: 0 6rem; */
     text-decoration: none;
     color: white;
 }
@@ -394,19 +305,30 @@ Media Queries
     .portfolio {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
     .portfolio {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
 @media screen and (max-width: 480px) {
+    html {
+        font-size: 60%;
+    }
     .portfolio {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .item {
+        margin-bottom: 1rem;
     }
 }
