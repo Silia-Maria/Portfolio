@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
 
 /* COLORS 
 green: #a4c3b2,
@@ -94,10 +103,8 @@ Nav-Bar
  */
 
 .primary-nav a {
-    color: black;
     margin: 0 2rem;
     padding: 0 0.5rem 0.3rem;
-    text-decoration: none;
 }
 
 .primary-nav li a:hover {
@@ -271,9 +278,11 @@ Contact
 
 .info-box {
     width: 100%;
+    margin-bottom: 2.2em;
 }
 
-.info-box:hover {
+.info-box:hover,
+.info-box:hover a {
     color: #a4c3b2;
 }
 
@@ -302,7 +311,7 @@ Media Queries
  */
 
 @media screen and (min-width: 1201px) {
-    .portfolio {
+    #portfolio {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
@@ -313,7 +322,7 @@ Media Queries
     html {
         font-size: 80%;
     }
-    .portfolio {
+    #portfolio {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -324,7 +333,7 @@ Media Queries
     html {
         font-size: 60%;
     }
-    .portfolio {
+    #portfolio {
         display: grid;
         grid-template-columns: 1fr;
     }

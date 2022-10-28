@@ -33,7 +33,7 @@ function showButton() {
 }
 
 
-// Portfolio Loop
+// Projects Array
 
 const projects = [{
         name: "Foodblog",
@@ -42,12 +42,12 @@ const projects = [{
     },
     {
         name: "Restaurant Website",
-        img: "restaurant.jpg",
+        img: "restaurant2.jpg",
         url: "path"
     },
     {
-        name: "Angular Project",
-        img: "angular.jpg",
+        name: "Car Rental Website",
+        img: "car-rental.jpg",
         url: "path"
     },
     {
@@ -55,4 +55,21 @@ const projects = [{
         img: "car-rental.jpg",
         url: "path"
     }
+
+
 ]
+
+// Print projects
+
+let projectRow = document.getElementById("portfolio");
+
+for (let project of projects) {
+    projectRow.innerHTML += `<div class="item">
+    <img src="../images/${project.img}" alt="">
+    <div class="description">
+        <h4>${project.name}</h4>
+        <a class="live-site" href="">See Live Site</a>
+    </div>
+</div>`
+
+}

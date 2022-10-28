@@ -153,32 +153,7 @@ Image Section
             <p class="thin-heading">Portfolio</p>
             <h3 class="mb-5">Recent Projects</h3>
             <!-- Grid going to be a loop in JS-->
-            <div class="portfolio">
-
-                <div class="item">
-                    <img src="../images/foodblog.jpg" alt="">
-                    <div class="description">
-                        <h4>Foodblog</h4>
-                        <a class="live-site" href="">See Live Site</a>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="../images/foodblog.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="../images/foodblog.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="../images/foodblog.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="../images/foodblog.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="../images/foodblog.jpg" alt="">
-                </div>
-
+            <div id="portfolio">
             </div>
         </div>
 
@@ -215,33 +190,36 @@ Image Section
 
             <div class="d-flex row justify-content-between">
                 <!--Form-->
-                <form class="mb-5  col-lg-5 col-md-12 col-sm-12">
+                <form class="mb-5  col-lg-5 col-md-12 col-sm-12  h-100">
                     <input type="text" placeholder="Name" class="input-fields p-2">
                     <input type="email" name="" id="" placeholder="Email" class="input-fields p-2">
                     <textarea name="Message" id="" cols="30" rows="5" placeholder="Message" class="input-fields p-2"></textarea>
-                    <button type="button" class="btn btn-outline-dark form-button text-uppercase mt-5">Send</button>
+                    <button type="button" class="btn btn-outline-dark form-button text-uppercase mt-5 align-self-end mb-sm-5 mb-md-5">Send</button>
                 </form>
 
 
                 <!--Information-->
-                <div class="mt-2 col-lg-5 col-md-12 col-sm-12">
-                    <div class="text-center mb-5 py-4 border border-dark info-box">
+                <div class=" col-lg-5 col-md-12 col-sm-12  h-100">
+                    <div class="text-center py-4 border border-dark info-box">
                         <i class="fa-solid fa-location-dot mb-2"></i>
                         <p class="mb-0">Burggasse 102, Vienna</p>
                     </div>
 
-                    <div class="text-center mb-5 py-4 border border-dark info-box">
-                        <i class="fa-solid fa-phone-flip mb-2"></i>
+                    <div class="text-center py-4 border border-dark info-box">
+                        <a href="tel:+43 660 2252867"><i class="fa-solid fa-phone-flip mb-2"></i></a>
                         <p class="mb-0">+43 660 2252867</p>
                     </div>
 
                     <div class="text-center py-4 border border-dark info-box">
-                        <i class="fa-solid fa-circle-nodes mb-2"></i>
+                        <i class="fa-solid fa-circle-nodes"></i>
+                        <p>Check me out!</p>
+
+
                         <div>
-                            <i class="fa-brands fa-instagram me-3"></i>
-                            <i class="fa-brands fa-linkedin-in me-3"></i>
-                            <i class="fa-brands fa-github me-3"></i>
-                            <i class="fa-regular fa-envelope"></i>
+                            <a href="https://www.instagram.com/siliac/" target="_blank"><i class="fa-brands fa-instagram me-3"></i></a>
+                            <a href="https://www.linkedin.com/in/silia-cronauer-6b841b247/" target="_blank"><i class="fa-brands fa-linkedin-in me-3"></i></a>
+                            <a href="https://github.com/Silia-Maria" target="_blank"><i class="fa-brands fa-github me-3"></i></a>
+                            <a href="mailto:silia.maria@web.de"><i class="fa-regular fa-envelope"></i></a>
                         </div>
                     </div>
 
