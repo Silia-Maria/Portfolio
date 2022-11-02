@@ -187,9 +187,16 @@ Portfolio
 ----------------
  */
 
+.portfolio_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .item {
     position: relative;
     width: 100%;
+    height: 35vh;
     padding: 1rem;
     transition: 0.5s;
 }
@@ -234,6 +241,13 @@ Portfolio
     text-transform: uppercase;
     text-decoration: none;
     font-size: 80%;
+    transition: 0.5s;
+}
+
+.live-site:hover {
+    transition: 0.2s;
+    letter-spacing: 0.1em;
+    color: white;
 }
 
 

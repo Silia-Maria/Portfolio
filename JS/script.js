@@ -65,7 +65,7 @@ let projectRow = document.getElementById("portfolio");
 
 for (let project of projects) {
     projectRow.innerHTML += `<div class="item">
-    <img src="../images/${project.img}" alt="">
+    <img class="portfolio_image" src="../images/${project.img}" alt="">
     <div class="description">
         <h4>${project.name}</h4>
         <a class="live-site" href="">See Live Site</a>
