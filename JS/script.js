@@ -64,7 +64,7 @@ const projects = [{
 let projectRow = document.getElementById("portfolio");
 
 for (let project of projects) {
-    projectRow.innerHTML += `<div class="item col">
+    projectRow.innerHTML += `<div class="item col mb-3">
     <img class="portfolio_image" src="../images/${project.img}" alt="">
     <div class="description">
         <h4>${project.name}</h4>

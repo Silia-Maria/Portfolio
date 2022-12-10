@@ -27,7 +27,7 @@ Home,  Skills, Projects, Contact
 
         <nav class="navbar navbar-expand-lg border-bottom border-dark primary-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="">Logo</a>
                 <!--Nav-bar Toggler-->
                 <div class="menu-icon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <input class="menu-icon__cheeckbox" type="checkbox" />
@@ -79,7 +79,19 @@ Scroll back to Top Button
     Hero 
 ---------------    
 -->
-        <div class="d-flex border-bottom border-dark justify-content-between">
+        <!--  <div class="d-flex border-bottom border-dark justify-content-between hero">
+            <div class="col-3 align-self-center ps-5 name">
+                <h1 class="text-uppercase"> Silia Cronauer</h1>
+                <p>Indipendent Web Developer</p>
+
+
+            </div>
+            <div class="hero-image col-8 border border-dark border-top-0 border-bottom-0">
+                <img src="../images/IMG_2415.jpg">
+            </div>
+        </div>-->
+
+        <div class="border-bottom border-dark hero">
             <div class="col-3 align-self-center ps-5 name">
                 <h1 class="text-uppercase"> Silia Cronauer</h1>
                 <p>Indipendent Web Developer</p>
@@ -90,7 +102,6 @@ Scroll back to Top Button
                 <img src="../images/IMG_2415.jpg">
             </div>
         </div>
-
 
         <!-- 
 --------------------    
@@ -104,12 +115,13 @@ Scroll back to Top Button
                         <img src="../images/IMG_3934.JPG" alt="">
                     </div>
                 </div>
-                <div class="col-lg-7 align-self-end text-end mb-5 p-5">
+                <div class="col-lg-7 align-self-end text-end mb-lg-5 p-5">
                     <p class="thin-heading"> About me</p>
                     <h3 class="mb-4">Hey I'm Silia!</h3>
-                    <p>I'm a sociologist and web designer. and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy
-                        every step of the design process, from discussion and collaboration.</p>
-                    <a href="" class="text-uppercase text-dark">Download CV</a>
+                    <p>I'm a sociologist and web developer. As a Web developer you have to constantly learn and I'm passionate about solving problems while building websites. I have acquired the skills and knowledge necessary to make your project a success.
+                        I enjoy every step of the design process, from discussion and collaboration.</p>
+                    <!--CV needs to be added!!-->
+                    <a href="" class="text-uppercase text-dark" download>Download CV</a>
                 </div>
             </div>
         </div>
@@ -125,17 +137,17 @@ Scroll back to Top Button
                     <div class="col px-4">
                         <h2 class="number">01</h2>
                         <h3>Web Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
+                        <p>The Design of a Website is a reclection of your buisness in the world wide web.</p>
                     </div>
                     <div class="col px-4">
                         <h2 class="number">02</h2>
                         <h3>Front-End Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
+                        <p>When it comes to style a website the fun begins. I'm passionate about the look of the user's interface and will find solutions for perfection.</p>
                     </div>
                     <div class="col px-4">
                         <h2 class="number">03</h2>
                         <h3>Back-End Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
+                        <p>From planning the Database to actually build it and finally work with it. Wether in framworks such as Symfony or in just plain PHP.</p>
                     </div>
                 </div>
             </div>
@@ -162,9 +174,11 @@ Image Section
             <p class="thin-heading">Portfolio</p>
             <h3 class="mb-5">Recent Projects</h3>
             <!-- Grid going to be a loop in JS-->
-            <div class="row row-cols-1 row-cols-md-3 g-4" id="portfolio">
+            <div id="portfolio" class="row row-cols-1 row-cols-lg-3 g-4">
             </div>
         </div>
+
+
 
         <!-- Technologies -->
         <div class="tech d-flex justify-content-around text-uppercase border-bottom border-dark">
