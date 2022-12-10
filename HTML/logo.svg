@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218.87 392.34">
+    <defs>
+        <style>.cls-1{font-size:28px;}.cls-1,.cls-2,.cls-3{fill:#1d1d1b;font-family:BebasNeue-Regular, 'Bebas Neue';}.cls-4{letter-spacing:.04em;}.cls-2{font-size:215.07px;}.cls-3{font-size:221.09px;}.cls-5{letter-spacing:.04em;}</style>
+    </defs>
+    <text />
+    <text class="cls-1" transform="translate(56.72 289.56) scale(.71 1)">
+        <tspan class="cls-5" x="0" y="0">Silia Cron</tspan>
+        <tspan class="cls-4" x="102.31" y="0">a</tspan>
+        <tspan class="cls-5" x="114.54" y="0">uer</tspan>
+    </text>
+    <text class="cls-2" transform="translate(42.38 256.67) rotate(-.02)">
+        <tspan x="0" y="0">c</tspan>
+    </text>
+    <text class="cls-3" transform="translate(92.47 205.72) rotate(-.02) scale(.97 1)">
+        <tspan x="0" y="0">s</tspan>
+    </text>
+</svg>

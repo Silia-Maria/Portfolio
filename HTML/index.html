@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+    <!-- Bootstrap - CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Silia Cronauer</title>
     <!--Font Awesome-->
@@ -25,34 +25,41 @@ Home,  Skills, Projects, Contact
 ----------------------------------
 -->
 
-        <div class="nav d-flex border-bottom border-dark align-items-baseline primary-nav sticky-top">
-
-            <!-- Logo -->
-            <div class="logo-box">
-                <div class="letter1">S
-                    <div class="letter2">C</div>
+        <nav class="navbar navbar-expand-lg border-bottom border-dark primary-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <!--Nav-bar Toggler-->
+                <div class="menu-icon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <input class="menu-icon__cheeckbox" type="checkbox" />
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!--Nav-Items-->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <!-- Nav-Items -->
-            <ul class="nav ms-5">
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+        </nav>
 
         <!-- 
 ---------------------------
@@ -77,6 +84,7 @@ Scroll back to Top Button
                 <h1 class="text-uppercase"> Silia Cronauer</h1>
                 <p>Indipendent Web Developer</p>
 
+
             </div>
             <div class="hero-image col-8 border border-dark border-top-0 border-bottom-0">
                 <img src="../images/IMG_2415.jpg">
@@ -99,8 +107,8 @@ Scroll back to Top Button
                 <div class="col-lg-7 align-self-end text-end mb-5 p-5">
                     <p class="thin-heading"> About me</p>
                     <h3 class="mb-4">Hey I'm Silia!</h3>
-                    <p> I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of
-                        the design process, from discussion and collaboration.</p>
+                    <p>I'm a sociologist and web designer. and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy
+                        every step of the design process, from discussion and collaboration.</p>
                     <a href="" class="text-uppercase text-dark">Download CV</a>
                 </div>
             </div>
@@ -110,21 +118,22 @@ Scroll back to Top Button
     Services 
 --------------------    
 -->
+
         <div class="bg-services" id="skills">
             <div class="container service-box">
-                <div class="row d-flex justify-content-between text-center">
-                    <div class="col-lg-4 col-sm-12 px-4">
-                        <h2>01</h2>
+                <div class="row row-cols-1 row-cols-md-3 text-center">
+                    <div class="col px-4">
+                        <h2 class="number">01</h2>
                         <h3>Web Design</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-4">
-                        <h2>02</h2>
+                    <div class="col px-4">
+                        <h2 class="number">02</h2>
                         <h3>Front-End Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-4">
-                        <h2>03</h2>
+                    <div class="col px-4">
+                        <h2 class="number">03</h2>
                         <h3>Back-End Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit in dolorem aspernatur maxime ab sit quasi reprehenderit eos iure.</p>
                     </div>
@@ -153,7 +162,7 @@ Image Section
             <p class="thin-heading">Portfolio</p>
             <h3 class="mb-5">Recent Projects</h3>
             <!-- Grid going to be a loop in JS-->
-            <div id="portfolio">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="portfolio">
             </div>
         </div>
 

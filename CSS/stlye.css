@@ -1,3 +1,21 @@
+/* 
+-----------------
+General Styles 
+-----------------
+*/
+
+
+/* COLORS 
+green: #a4c3b2,
+grey: #B2B2B2, */
+
+.thin-heading {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 150%;
+    color: #B2B2B2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,22 +31,79 @@ a:hover {
 }
 
 
-/* COLORS 
-green: #a4c3b2,
-grey: #B2B2B2,
+/* Nav Toggler */
 
+.menu-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
 
-/* 
------------------
-General Styles 
------------------
-*/
+.menu-icon .menu-icon__cheeckbox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-touch-callout: none;
+    position: absolute;
+    opacity: 0;
+}
 
-.thin-heading {
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 150%;
-    color: #B2B2B2;
+.menu-icon div {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 22px;
+    height: 12px;
+}
+
+.menu-icon span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bar-bg, #000);
+    border-radius: 1px;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+
+.menu-icon span:first-of-type {
+    top: 0;
+}
+
+.menu-icon span:last-of-type {
+    bottom: 0;
+}
+
+.menu-icon.active span:first-of-type,
+.menu-icon .menu-icon__cheeckbox:checked+div span:first-of-type {
+    transform: rotate(45deg);
+    top: 5px;
+}
+
+.menu-icon.active span:last-of-type,
+.menu-icon .menu-icon__cheeckbox:checked+div span:last-of-type {
+    transform: rotate(-45deg);
+    bottom: 5px;
+}
+
+.menu-icon.active:hover span:first-of-type,
+.menu-icon.active:hover span:last-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked+div span:first-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked+div span:last-of-type {
+    width: 22px;
+}
+
+@media (min-width: 1024px) {
+    .menu-icon {
+        display: none;
+    }
 }
 
 
@@ -75,6 +150,12 @@ Logo
 
 .logo-box {
     padding: 1rem;
+}
+
+.logo {
+    width: 5%;
+    height: 5vh;
+    object-fit: cover;
 }
 
 .letter1 {
@@ -180,6 +261,11 @@ Service
     padding: 8rem 0;
 }
 
+.number {
+    font-size: 500%;
+    font-weight: 100;
+}
+
 
 /* 
 ----------------
@@ -196,7 +282,7 @@ Portfolio
 .item {
     position: relative;
     width: 100%;
-    height: 35vh;
+    height: auto;
     padding: 1rem;
     transition: 0.5s;
 }
@@ -339,7 +425,7 @@ Media Queries
     #portfolio {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        margin: 2em 0;
     }
 }
 

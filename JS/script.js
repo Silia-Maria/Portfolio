@@ -64,11 +64,11 @@ const projects = [{
 let projectRow = document.getElementById("portfolio");
 
 for (let project of projects) {
-    projectRow.innerHTML += `<div class="item">
+    projectRow.innerHTML += `<div class="item col">
     <img class="portfolio_image" src="../images/${project.img}" alt="">
     <div class="description">
         <h4>${project.name}</h4>
-        <a class="live-site" href="">See Live Site</a>
+        <a class="live-site" href="${project.url}">See Live Site</a>
     </div>
 </div>`
 
