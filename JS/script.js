@@ -36,16 +36,19 @@ function showButton() {
 // Projects Array
 
 const projects = [{
+        // First Project with sass?
         name: "Foodblog",
         img: "foodblog.jpg",
         url: "path"
     },
     {
+        // Typescript
         name: "Restaurant Website",
-        img: "restaurant2.jpg",
+        img: "restaurant.png",
         url: "path"
     },
     {
+        // Angular Project
         name: "Car Rental Website",
         img: "car-rental.jpg",
         url: "path"
@@ -55,7 +58,6 @@ const projects = [{
         img: "car-rental.jpg",
         url: "path"
     }
-
 
 ]
 
@@ -68,7 +70,7 @@ for (let project of projects) {
     <img class="portfolio_image" src="../images/${project.img}" alt="">
     <div class="description">
         <h4>${project.name}</h4>
-        <a class="live-site" href="${project.url}">See Live Site</a>
+        <a class="live-site" href="${project.url}" target="_blank">See Live Site</a>
     </div>
 </div>`
 
