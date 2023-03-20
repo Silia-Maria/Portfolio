@@ -236,8 +236,9 @@ About
  */
 
 .about-container {
-    margin: 5rem 8rem;
-    padding: 3rem;
+    /* margin: 5rem 8rem; */
+    margin: 3rem;
+    padding: 3rem 0 3rem 3rem;
 }
 
 .about-img {
@@ -437,6 +438,9 @@ Media Queries
     }
     .hero {
         flex-direction: column-reverse;
+    }
+    .hero .name p {
+        text-align: center;
     }
     .hero-image {
         width: 100vw;
