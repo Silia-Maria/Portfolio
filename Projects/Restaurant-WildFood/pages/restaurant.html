@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Archivo&family=Great+Vibes&family=Lato:wght@300;400&family=Lobster+Two&family=Manrope&family=Mulish:wght@200;400&family=Oswald:wght@200;300;400&family=Roboto:wght@100;300;400&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <!-- Other Font-->
+    <link href="http://fonts.cdnfonts.com/css/haus" rel="stylesheet">
+    <!-- My stylesheet -->
+    <link rel=" stylesheet " href="../CSS/style.css">
+    <title>Wild Food - Restaurant</title>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <!-- 
+-------------
+left Side
+-------------
+ -->
+        <div class="left">
+
+            <!-- Logo-->
+            <a href="index.html"><img src="../images/restaurant-logo.png" alt="" id="logo"></a>
+
+            <!-- Nav-Bar -->
+            <div class="my-nav">
+                <div class="my-5">
+                    <ul class="nav flex-column ">
+                        <li class="nav-item ">
+                            <h1><a class="nav-link text-dark " aria-current="page " href="restaurant.html">Restaurant <i class="fa-solid fa-arrow-right-long "></i></a></h1>
+                        </li>
+                        <li class="nav-item ">
+                            <h1><a class="nav-link text-dark " href="shop.html">Shops <i class="fa-solid fa-arrow-right-long "></i></a>
+                        </li>
+                        </h1>
+                        <li class="nav-item ">
+                            <h1><a class="nav-link text-dark " href="event.html">Events <i class="fa-solid fa-arrow-right-long "></i></a>
+                        </li>
+                        </h1>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Nav Bar-->
+
+        </div>
+
+        <!--End Left side-->
+
+        <!--
+-------------
+right side 
+-------------
+-->
+        <div class="right">
+
+            <!-- Navigation buttons -->
+            <div class="mb-2">
+                <button class="button me-2 "><a href="#intro">Intro</a></button>
+                <button class="button me-2 "><a href="#menu">Menu</a></button>
+                <button class="button me-2 "><a href="#reservation">Reservation</a></button>
+                <button class="button "><a href="#contact">Contact</a></button>
+            </div>
+
+
+            <!-- Carousel -->
+
+            <div class="hero">
+                <div id="carouselExampleFade" class="my-carousel carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner" data-interval="1000" height="auto">
+                        <div class="my-carousel-item carousel-item active">
+                            <img src="../images/hero1.jpg" class="w-100" alt="... ">
+                        </div>
+                        <div class="my-carousel-item carousel-item">
+                            <img src="../images/hero2.jpg" class=" w-100" alt="...">
+                        </div>
+                        <div class="my-carousel-item carousel-item ">
+                            <img src="../images/hero3.jpg " class="w-100" alt="... ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Carousel -->
+
+            <!-- Intro -->
+
+            <div id="intro" class="section">
+                <h5>Home-made Tapas <br> with local & sesonal products only </h5>
+                <p>We get our products from small local farms who we know personally. Sustainability is very important to us, thats why we create new dishes almost daily to not waste any product. Because we only use seasonal products the whole menu changes
+                    with the Season.</p>
+
+            </div>
+
+            <!-- Menu -->
+
+            <div class="p-2 section" id="menu">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active menuTab" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Food</button>
+                        <button class="nav-link menuTab" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Beverage</button>
+                    </div>
+                </nav>
+
+                <!-- Food -->
+                <div class="tab-content p-2" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab " tabindex="0">
+
+                        <div id="starters">
+                            <h5 class="sectionHeading ">Starters</h5>
+                        </div>
+
+                        <div id="veggie">
+                            <h5 class="sectionHeading ">Veggie Lover</h5>
+                        </div>
+
+                        <div id="meat">
+                            <h5 class="sectionHeading ">Meat Lover</h5>
+                        </div>
+
+                        <div id="dessert">
+                            <h5 class="sectionHeading ">Sweets</h5>
+                        </div>
+                    </div>
+
+                    <!-- Beverage -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div id="wine">
+                            <h5 class="sectionHeading">Wine</h5>
+                        </div>
+                        <div id="beer">
+                            <h5 class="sectionHeading">Beer</h5>
+                        </div>
+                        <div id="shots">
+                            <h5 class="sectionHeading">Shots</h5>
+                        </div>
+                        <div id="mix">
+                            <h5 class="sectionHeading">Mixings</h5>
+                        </div>
+                        <div id="non-alcohol">
+                            <h5 class="sectionHeading">Virgin</h5>
+                        </div>
+                        <div id="coffeTea">
+                            <h5 class="sectionHeading">Coffee & Tea</h5>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Reservation-->
+            <div class="section" id="reservation">
+                <h5>Make a Reservation</h5>
+                <p>If you want to make a group reservation for more than 10 people, please give us a <a href="#contact">call</a> or send us an <a href="#contact">Email</a>! </p>
+                <p>We're looking forward to serve you our delicious creations soon!</p>
+
+                <form class="reservation">
+                    <label for="name">Name
+                        <input type="text" id="name" placeholder="First Name & Last Name">
+                    </label>
+                    <label for="email">Email
+                        <input type="text" id="email" placeholder="Email">
+                        <p class="small text-secondary">*only to confirm your reservation</p>
+                    </label>
+                    <label for="date">Date
+                        <input type="date" id="date">
+                    </label>
+                    <label for="people">How many people?
+                        <select id="people">
+                            <option value="1">Just for me</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                            <option value="9">9 People</option>
+                            <option value="10">10 People</option>
+                        </select>
+                    </label>
+                    <button class="button mt-3">Submit</button>
+                </form>
+            </div>
+
+            <!--Footer-->
+
+            <!--Opening Hours-->
+            <div class="section row" id="contact">
+                <div class="col ">
+                    <h5>Opening Hours</h5>
+                    <p class="my-0">Mo - Thu</p>
+                    <p class="small">5 pm - 11 pm</p>
+                    <p class="my-0">Fri - Sat</p>
+                    <p class="small">5 pm - 1 am</p>
+                    <p class="my-0">Sunday</p>
+                    <p class="small">closed</p>
+                </div>
+
+                <!--Contact-->
+                <div class="col">
+                    <h5>Contact</h5>
+                    <p><i class="fa-solid fa-phone-flip"></i> +43 0668 5749879</p>
+                    <p><i class="fa-solid fa-envelope"></i> wild-food-service@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Florianigasse, 1080 Vienna</p>
+                </div>
+                <hr>
+                <div class="text-end">
+                    <i class="fa-brands fa-instagram me-3 fs-4"></i>
+                    <i class="fa-brands fa-square-facebook fs-4"></i>
+                    <p class="small-text mb-0 mt-2">&copy Silia Cronauer 2022 <br>*this website was created for educational purposes only!</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- End right side-->
+
+
+
+    <!-- My Script -->
+    <script src="../restaurant.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

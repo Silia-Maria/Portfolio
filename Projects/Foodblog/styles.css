@@ -1,0 +1,438 @@
+/* Variables */
+/* remove all padding & margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  padding: 2%;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-container h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 250%;
+}
+
+.flex-container h4 {
+  word-spacing: 20px;
+  padding-top: 15px;
+  font-size: 120%;
+  font-weight: 100;
+}
+
+.flex-container h4 i {
+  font-size: 110%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.flex-container h4 i:hover {
+  font-size: 130%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* Top - Nav */
+.flex-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 1% 0;
+}
+
+.top-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-nav a:hover {
+  letter-spacing: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* Main Content */
+.content-container {
+  margin: 3% 6%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.grid .grid-item {
+  padding-top: 70%;
+}
+
+.grid .grid-item .label {
+  padding: 5% 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  line-height: 150%;
+}
+
+.recipe1 {
+  background-image: url(./images/egg-salad.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.recipe2 {
+  background-image: url(./images/burger.jpg);
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+.recipe3 {
+  background-image: url(./images/pizza.jpg);
+  background-size: cover;
+}
+
+.recipe4 {
+  background-image: url(./images/pancakes.jpg);
+  background-size: cover;
+  background-position: 40% 0%;
+}
+
+.recipe5 {
+  background-image: url(./images/pasta.jpg);
+  background-size: cover;
+  background-position: 0% 60%;
+}
+
+.recipe6 {
+  background-image: url(./images/acai-bowl.jpg);
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.recipe7 {
+  background-image: url(./images/taco.jpg);
+  background-size: cover;
+  background-position: 0% 70%;
+}
+
+.recipe8 {
+  background-image: url(./images/red-velvet.jpg);
+  background-size: cover;
+}
+
+.recipe9 {
+  background-image: url(./images/poke-bowl.jpg);
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+/* Footer */
+footer {
+  margin-top: 8%;
+}
+
+footer .footer-nav {
+  background-color: black;
+  text-align: center;
+  padding-top: 1%;
+}
+
+footer .footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 3% 7% 0% 7%;
+  font-size: 67%;
+}
+
+footer .footer-nav span {
+  color: white;
+}
+
+.copyright {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5% 0% 1% 0%;
+}
+
+.copyright i {
+  padding: 0% 0.5% 1% 0.5%;
+  font-size: 67%;
+}
+
+.copyright p {
+  font-size: 67%;
+}
+
+/*
+-----------------------------
+Recipe of the Month 
+-----------------------------
+*/
+/* Heading */
+.heading {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.heading h1 {
+  font-size: 250%;
+}
+
+.heading h2 {
+  font-size: 200%;
+  margin-top: 2%;
+}
+
+/* Hero */
+.recipe-img {
+  max-width: 100%;
+  margin-top: 3%;
+  padding: 30% 0%;
+  background-image: url(./images/shakshuka2.jpg);
+  background-size: cover;
+  background-position: 0% 20%;
+  background-attachment: fixed;
+}
+
+.recipe-img .label {
+  padding: 5% 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  line-height: 150%;
+  font-size: 150%;
+}
+
+/* Jamie Quote */
+.jamie {
+  margin-top: 5%;
+  padding: 0% 10%;
+  text-align: center;
+  line-height: 200%;
+}
+
+.jamie q {
+  font-size: 130%;
+}
+
+.jamie span {
+  color: grey;
+}
+
+/* Ingredients & Directions */
+.flex-ingredients {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 5%;
+  padding: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ingredients-header {
+  line-height: 150%;
+  padding-bottom: 2%;
+  border-bottom: 0.5px solid black;
+}
+
+.ingredients-header p {
+  display: inline;
+  margin-right: 2%;
+}
+
+.ingredients-header i {
+  margin-right: 3%;
+}
+
+.ingredients {
+  width: 40%;
+}
+
+.ingredients ul {
+  margin: 7% 0% 0% 5%;
+}
+
+.ingredients ul li {
+  padding: 2% 0%;
+}
+
+.method {
+  width: 50%;
+}
+
+.method ol {
+  margin: 5% 0% 0% 5%;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.method ol li {
+  padding: 2% 0%;
+}
+
+.method h3 {
+  padding-bottom: 7.4%;
+  border-bottom: 0.5px solid black;
+}
+
+h3 {
+  padding-bottom: 2%;
+  font-weight: 100;
+  font-size: 150%;
+}
+
+/*
+--------------------------
+About
+---------------------------
+*/
+.flex-about {
+  max-width: 100%;
+  padding: 3%;
+  margin: 3% 2% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-about .text {
+  width: 30%;
+}
+
+.flex-about .text h1 {
+  margin: 5% 0%;
+  font-weight: 100;
+}
+
+.flex-about .text p {
+  line-height: 150%;
+  margin-bottom: 5%;
+  text-align: justify;
+}
+
+.flex-about .about-image {
+  width: 60%;
+  background-image: url(./images/about-me.jpg);
+  background-size: cover;
+  border-radius: 2%;
+}
+
+.image-fixed {
+  padding-top: 70%;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  background-image: url(./images/max-delsid-0geTqSZ76Xg-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cooking-class {
+  border: 1px solid rgba(123, 204, 154, 0.76);
+  border-radius: 10px;
+  padding: 3%;
+  margin: 3% 2% 0;
+  text-align: center;
+}
+
+.cooking-class h1,
+.cooking-class h2 {
+  font-weight: 100;
+  line-height: 150%;
+}
+
+.cooking-class p {
+  margin-top: 3%;
+}
+
+.button {
+  width: 20%;
+  padding: 1.5% 1%;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: rgba(185, 228, 202, 0.76);
+  border: 1px solid black;
+}
+
+.button:hover {
+  background-color: rgba(123, 204, 154, 0.76);
+}
+
+/*
+--------------------------
+Media Queries
+--------------------------
+*/
+@media screen and (min-width: 1201px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+  .grid .grid-item {
+    margin-bottom: 5%;
+  }
+  .top-nav {
+    font-size: 70%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

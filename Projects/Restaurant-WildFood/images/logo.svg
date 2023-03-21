@@ -1,0 +1,16 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428.49 420.2">
+    <defs>
+        <style>
+            .cls-1{fill:#61764b;}.cls-2{font-size:112px;}.cls-2,.cls-3{fill:#1d1d1b;font-family:BebasNeueBold,
+            'Bebas
+            Neue';}.cls-3{font-size:93px;}.cls-4{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:8px;}</style>
+    </defs>
+    <circle class="cls-1" cx="148.51" cy="151.46" r="118.9" />
+    <text class="cls-3" transform="translate(114.46 205.78)">
+        <tspan x="0" y="0">Wild </tspan>
+    </text>
+    <text class="cls-2" transform="translate(178.29 275.16)">
+        <tspan x="0" y="0">FOOD</tspan>
+    </text>
+    <rect class="cls-4" x="4" y="4" width="387.8" height="412.2" />
+</svg>
