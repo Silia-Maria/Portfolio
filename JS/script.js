@@ -39,19 +39,19 @@ const projects = [{
         // First Project with sass?
         name: "Foodblog",
         img: "foodblog.jpg",
-        url: "path"
+        url: "Projects/Foodblog"
     },
     {
         // Typescript
         name: "Restaurant Website",
         img: "restaurant.png",
-        url: "path"
+        url: "Projects/Restaurant-WildFood/pages"
     },
     {
         // Angular Project
         name: "Car Rental Website",
         img: "car-rental.jpg",
-        url: "path"
+        url: "Projects/car-rental"
     },
     {
         name: "Car Rental",
