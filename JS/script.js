@@ -54,8 +54,8 @@ const projects = [{
         url: "Projects/car-rental"
     },
     {
-        name: "Car Rental",
-        img: "car-rental.jpg",
+        name: "Vienna City Library",
+        img: "library1.png",
         url: "path"
     }
 
