@@ -36,27 +36,34 @@ function showButton() {
 // Projects Array
 
 const projects = [{
-        // First Project with sass?
+        // First Project - Foodblog
         name: "Foodblog",
         img: "foodblog.jpg",
         url: "Projects/Foodblog"
     },
     {
-        // Typescript
-        name: "Restaurant Website",
+        // Restaurant - typescript
+        name: "Restaurant WildFood",
         img: "restaurant.png",
         url: "Projects/Restaurant-WildFood/pages"
     },
     {
-        // Angular Project
-        name: "Car Rental Website",
+        // Car-Rental - Angular Project
+        name: "Unique - Car Rental",
         img: "car-rental.jpg",
         url: "Projects/car-rental"
     },
     {
+        // Library - PHP
         name: "Vienna City Library",
         img: "library1.png",
         url: "path"
+    },
+    {
+        // Angular (E-commerce) - Flower Shop
+        name: "flùr - Flower shop",
+        img: "flur.png",
+        url: "Projects/flower-shop"
     }
 
 ]

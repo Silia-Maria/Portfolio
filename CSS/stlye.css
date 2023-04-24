@@ -297,8 +297,6 @@ Portfolio
 }
 
 .item {
-    /* position: relative; */
-    /* width: 100%; */
     height: auto;
     padding: 1rem;
     transition: 0.5s;
