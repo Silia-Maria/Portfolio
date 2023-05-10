@@ -18,12 +18,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="shortcut icon" href="favicon_io/favicon.ico">
+    <link rel="shortcut icon" href="myfavicon/favicon.ico">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@100;300;400&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <section>
+
         <!-- 
 ----------------------------------   
 Nav bar:
@@ -31,10 +34,10 @@ Home,  Skills, Projects, Contact
 ----------------------------------
 -->
 
-        <nav class="navbar navbar-expand-lg border-bottom border-dark primary-nav">
+        <nav class="navbar navbar-expand-lg border-bottom border-dark primary-nav text-uppercase ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/sclogo3.png" width="100" height="80">
+                <a class="navbar-brand heading-font" href="#">
+                    silia cronauer
                 </a>
                 <!--Nav-bar Toggler-->
                 <div class="menu-icon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,12 +48,9 @@ Home,  Skills, Projects, Contact
                     </div>
                 </div>
                 <!--Nav-Items-->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
+                    <ul class="navbar-nav ">
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
@@ -84,42 +84,23 @@ Scroll back to Top Button
 
         <!-- 
 ---------------
-    Hero 
+    Hero & About
 ---------------    
 -->
+        <h1 class="text-uppercase heading-font text-end hero-heading border-bottom border-dark mb-0"> * Junior <br> Web Developer</h1>
+        <div class=" hero">
+            <div class="ps-4 about-content align-self-center" id="about">
 
-        <div class="border-bottom border-dark hero">
-            <div class="align-self-center ps-5 name">
-                <h1 class="text-uppercase"> Silia Cronauer</h1>
-                <p>Junior Fullstack Developer</p>
+                <p class="text-dark"> - sociologist with a unique perspective to building websites. I'm all about creating stunning front-end designs that reflect a company's brand and values but also eager to dive into the back-end and make sure everything works seamlessly.
+                    My passion is helping businesses shine on the world wide web and I believe an aestatic and user-friendly website is key to success. Want to work together and make your project stand out?</p>
+                <a href="#contact" class="heading-font text-uppercase heading-with-border text-dark fs-4">Let's Talk</a>
             </div>
             <div class="hero-image border-start border-dark">
                 <img src="../images/IMG_2415.jpg">
             </div>
         </div>
 
-        <!-- 
---------------------    
-   About
---------------------    
--->
-        <div class="about-container" id="about">
-            <div class="row">
-                <div class="col-lg-5 align-self-center">
-                    <div class="about-img ">
-                        <img src="../images/IMG_3934.JPG" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-7 align-self-end text-end mb-lg-5 p-5">
-                    <p class="thin-heading"> About me</p>
-                    <h3 class="mb-4">Hey I'm Silia!</h3>
-                    <p>I'm a sociologist and web developer. As a Web developer you have to constantly learn and I'm passionate about solving problems while building websites. Excited to grow my skills I have acquired the skills and knowledge necessary to
-                        make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
-                    <!--CV needs to be added!!-->
-                    <a href="" class="text-uppercase text-dark" download>Download CV</a>
-                </div>
-            </div>
-        </div>
+
         <!-- 
 --------------------    
     Services 
@@ -131,17 +112,17 @@ Scroll back to Top Button
                 <div class="row row-cols-1 row-cols-md-3 text-center">
                     <div class="col px-4">
                         <h2 class="number">01</h2>
-                        <h3>Web Design</h3>
+                        <h3 class="heading-font text-uppercase">Web Design</h3>
                         <p>The Design of a Website is a reflection of your buisness in the world wide web.</p>
                     </div>
                     <div class="col px-4">
                         <h2 class="number">02</h2>
-                        <h3>Front-End Development</h3>
+                        <h3 class="heading-font text-uppercase">Front-End</h3>
                         <p>When it comes to style a website the fun begins. I'm passionate about the look of the user's interface and will find solutions for perfection.</p>
                     </div>
                     <div class="col px-4">
                         <h2 class="number">03</h2>
-                        <h3>Back-End Development</h3>
+                        <h3 class="heading-font text-uppercase">Back-End</h3>
                         <p>From planning the Database to actually build it and finally work with it. Wether in framworks such as Symfony or in just plain PHP.</p>
                     </div>
                 </div>
@@ -153,10 +134,7 @@ Scroll back to Top Button
 Image Section
 ---------------------
 -->
-        <div class="image-section">
-
-        </div>
-
+        <div class="image-section"></div>
 
         <!-- 
 --------------------    
@@ -164,44 +142,18 @@ Image Section
 ---------------------
 -->
 
+
         <!-- Project Section -->
         <div class="container my-5" id="projects">
-            <p class="thin-heading">Portfolio</p>
-            <h3 class="mb-5">Recent Projects</h3>
-            <!-- Grid going to be a loop in JS-->
+            <h1 class="mb-5 heading-font heading-with-border text-uppercase text-center">Recent Projects</h1>
+
+            <!-- Portfolio Cards (loop in JS)-->
             <div id="portfolio" class="row row-cols-1 row-cols-lg-3 g-4">
             </div>
         </div>
 
-
-
         <!-- Technologies -->
-        <div class="tech d-flex justify-content-around text-uppercase border-bottom border-dark">
-            <div class="text-center"><i class="fa-brands fa-html5 fs-2"></i>
-                <p>html5</p>
-            </div>
-            <div class="text-center"><i class="fa-brands fa-css3-alt fs-2"></i>
-                <p>css</p>
-            </div>
-            <div class="text-center"><i class="fa-brands fa-sass fs-2"></i>
-                <p>scss</p>
-            </div>
-            <div class="text-center"><i class="fa-brands fa-bootstrap fs-2"></i>
-                <p>Bootstrap</p>
-            </div>
-            <div class="text-center"><i class="fa-brands fa-square-js fs-2"></i>
-                <p>Java-script</p>
-            </div>
-            <div class="text-center"><i class="fa-brands fa-angular fs-2"></i>
-                <p>Angular</p>
-            </div>
-            <div class="text-center"><i class="fa-brands fa-php fs-2"></i>
-                <p>PHP</p>
-            </div>
-            <div class="text-center"><i class="fa-brands fa-symfony fs-2"></i>
-                <p>Symfony</p>
-            </div>
-        </div>
+        <div id="tech" class="tech d-flex justify-content-around text-uppercase border-bottom border-dark"></div>
 
         <!--
 --------------------    
@@ -209,45 +161,38 @@ Image Section
 --------------------
 -->
         <div class="container" id="contact">
-            <p class="thin-heading">Contact</p>
-            <h3 class="mb-5">Get in Touch</h3>
 
-            <div class="row justify-content-between">
-                <!--Form-->
-                <form class="mb-5  col-lg-5 col-md-12 col-sm-12  h-100">
-                    <input type="text" placeholder="Name" class="input-fields p-2">
-                    <input type="email" placeholder="Email" class="input-fields p-2">
-                    <textarea name="Message" id="" cols="30" rows="5" placeholder="Message" class="input-fields p-2"></textarea>
-                    <button type="button" class="btn btn-outline-dark form-button text-uppercase mt-5 align-self-end mb-sm-5 mb-md-5">Send</button>
-                </form>
+            <h1 class="heading-font text-uppercase contact-heading heading-with-border mb-0">
+                Let's Connect
+            </h1>
+            <p class="fs-5">- please feel free to contact me</p>
 
+            <div class="text-end">
+                <h1 class="heading-font email">silia.maria<br>@web.de</h1>
+            </div>
 
-                <!--Information-->
-                <div class=" col-lg-5 col-md-12 col-sm-12  h-100">
-                    <div class="text-center py-4 border border-dark info-box">
-                        <i class="fa-solid fa-location-dot mb-2"></i>
-                        <p class="mb-0">Burggasse 102, Vienna</p>
-                    </div>
+            <div class="mb-5 contact-icons">
+                <span class="contact-icon-box me-2">
+        <a href="https://www.instagram.com/siliac/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </span>
+                <span class="contact-icon-box me-2">
+        <a href="https://www.linkedin.com/in/silia-cronauer/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+    </span>
+                <span class="contact-icon-box me-2">
+        <a href="https://github.com/Silia-Maria"" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </span>
 
-                    <div class="text-center py-4 border border-dark info-box">
-                        <a href="tel:+43 660 2252867"><i class="fa-solid fa-phone-flip mb-2"></i></a>
-                        <p class="mb-0">+43 660 2252867</p>
-                    </div>
+                <span class="contact-icon-box numberShow" id="phone-link">
+            <i class="fa-solid fa-phone-flip "></i>
+            <a class="phone-number" href="tel:+43 660 2252867" target="_blank">+43 (0) 6602252867</a>
+        </span>
 
-                    <div class="text-center py-4 border border-dark info-box">
-                        <i class="fa-solid fa-circle-nodes"></i>
-                        <p>Check me out!</p>
-
-
-                        <div>
-                            <a href="https://www.instagram.com/siliac/" target="_blank"><i class="fa-brands fa-instagram me-3"></i></a>
-                            <a href="https://www.linkedin.com/in/silia-cronauer-6b841b247/" target="_blank"><i class="fa-brands fa-linkedin-in me-3"></i></a>
-                            <a href="https://github.com/Silia-Maria" target="_blank"><i class="fa-brands fa-github me-3"></i></a>
-                            <a href="mailto:silia.maria@web.de"><i class="fa-regular fa-envelope"></i></a>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
 
@@ -258,15 +203,15 @@ Image Section
 Footer 
 -----------------
 -->
-    <div class="bg-black py-4">
-        <div class="nav text-light justify-content-around mt-3 small-text nav-footer">
-            <a href="">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <div class="bg-black py-4 ">
+        <div class="nav text-light justify-content-around mt-3 small-text nav-footer ">
+            <a href=" ">Home</a>
+            <a href="#about ">About</a>
+            <a href="#skills ">Skills</a>
+            <a href="#projects ">Projects</a>
+            <a href="#contact ">Contact</a>
         </div>
-        <p class="text-center mt-5 small-text text-light">&copy; Silia Cronauer 2022</p>
+        <p class="text-center mt-5 small-text text-light ">&copy; Silia Cronauer 2022</p>
     </div>
 
     <!-- 
@@ -276,10 +221,10 @@ Script Tags
 -->
 
     <!-- My Script -->
-    <script src="../JS/script.js"></script>
+    <script src="../JS/script.js "></script>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3 " crossorigin="anonymous "></script>
 </body>
 
 </html>

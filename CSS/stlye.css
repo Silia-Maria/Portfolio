@@ -4,18 +4,6 @@ General Styles
 -----------------
 */
 
-
-/* COLORS 
-green: #a4c3b2,
-grey: #B2B2B2, */
-
-.thin-heading {
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 150%;
-    color: #B2B2B2;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +16,20 @@ a {
 
 a:hover {
     color: black;
+}
+
+.heading-with-border {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 0 0.3em;
+}
+
+h1 {
+    font-size: calc(4.375rem + 1.5vw);
+}
+
+.heading-font {
+    font-family: 'Oranienbaum', serif;
 }
 
 
@@ -108,12 +110,6 @@ Nav Toggler
     width: 22px;
 }
 
-@media (min-width: 1024px) {
-    .menu-icon {
-        display: none;
-    }
-}
-
 
 /* 
 -----------------
@@ -135,6 +131,7 @@ Scroll Button
     position: absolute;
     display: block;
     display: none;
+    z-index: 100;
 }
 
 .text {
@@ -146,42 +143,6 @@ Scroll Button
     position: fixed;
     transform: rotate(90deg);
     white-space: nowrap;
-    /* transform-origin: center; */
-}
-
-
-/* 
-----------------
-Logo
-----------------
- */
-
-.logo-box {
-    padding: 1rem;
-}
-
-.logo {
-    width: 5%;
-    height: 5vh;
-    object-fit: cover;
-}
-
-.letter1 {
-    position: relative;
-    padding-left: 3rem;
-}
-
-.letter2 {
-    position: absolute;
-    width: 100%;
-    top: -50%;
-    left: 54%;
-}
-
-.letter1,
-.letter2 {
-    font-size: 200%;
-    font-weight: 100;
 }
 
 
@@ -191,13 +152,26 @@ Nav-Bar
 ---------------
  */
 
+.logo {
+    width: 100px;
+    height: 80px;
+}
+
 .primary-nav a {
     margin: 0 2rem;
-    padding: 0 0.5rem 0.3rem;
+    padding: 0 0rem 0.3rem;
 }
 
 .primary-nav li a:hover {
-    border-bottom: 1px solid black;
+    font-style: italic;
+}
+
+.primary-nav a {
+    margin: 0;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
 }
 
 
@@ -222,10 +196,10 @@ img {
     object-fit: cover;
 }
 
-.name {
-    color: #a4c3b2;
-    flex: 35%;
-    padding-right: 2rem;
+.hero-heading {
+    position: sticky;
+    padding: 0 0.2em;
+    background-color: #dad7cd;
 }
 
 
@@ -235,14 +209,14 @@ About
 ----------------
  */
 
-.about-container {
-    /* margin: 5rem 8rem; */
-    margin: 3rem;
-    padding: 3rem 0 3rem 3rem;
-}
-
 .about-img {
     width: 100%;
+}
+
+.about-content {
+    text-align: end;
+    flex: 35%;
+    padding-right: 2rem;
 }
 
 
@@ -258,7 +232,8 @@ Image-section
     background-image: url(../images/image-section1.JPG);
     background-position: 80% 100%;
     background-attachment: fixed;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -269,7 +244,7 @@ Service
  */
 
 .bg-services {
-    background-color: #a4c3b2;
+    background-color: #dad7cd;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -342,13 +317,13 @@ Portfolio
     text-transform: uppercase;
     text-decoration: none;
     font-size: 80%;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .live-site:hover {
-    transition: 0.2s;
     letter-spacing: 0.1em;
     color: white;
+    transition: 0.2s;
 }
 
 
@@ -377,27 +352,26 @@ Contact
 ----------------
  */
 
-.input-fields {
-    margin-bottom: 2rem;
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
-    text-transform: uppercase;
-    width: 100%;
+.contact-icon-box {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 1em 1.2em;
 }
 
-.form-button {
-    width: 100%;
-    border-radius: 0;
+.contact-heading {
+    display: inline-block;
 }
 
-.info-box {
-    width: 100%;
-    margin-bottom: 2.2em;
+.phone-number {
+    display: none;
 }
 
-.info-box i:hover {
-    color: #a4c3b2;
+.numberShow:hover .phone-number {
+    display: inline;
+}
+
+.fs-5 {
+    margin-left: 1.8rem;
 }
 
 
@@ -412,7 +386,6 @@ Footer
 }
 
 .small-text a {
-    /* margin: 0 6rem; */
     text-decoration: none;
     color: white;
 }
@@ -424,6 +397,35 @@ Media Queries
 ----------------
  */
 
+@media (min-width: 1024px) {
+    /* nav-bar */
+    .menu-icon {
+        display: none;
+    }
+    /* .item:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+    .description>* {
+        transform: translateY(30px);
+        transition: transform 0.25s;
+    }
+    .item:hover .description {
+        visibility: visible;
+    }
+    .description:hover>* {
+        transform: translateY(0);
+    }
+    .live-site {
+        transition: 0.5s;
+    }
+    .live-site:hover {
+        transition: 0.2s;
+        letter-spacing: 0.1em;
+        color: white;
+    } */
+}
+
 @media screen and (max-width:1024px) {
     .about-container {
         margin: 2rem 3rem;
@@ -434,48 +436,43 @@ Media Queries
     html {
         font-size: 80%;
     }
-    .hero {
-        flex-direction: column-reverse;
-    }
-    .hero .name p {
-        text-align: center;
-    }
-    .hero-image {
-        width: 100vw;
-        border: none !important;
-    }
-    .name {
+    /* about */
+    .about-content {
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
-    .image-section {
-        background-attachment: unset;
-        background-size: 768px;
-        padding: 27%;
-    }
+    /* skills */
     .service-box {
         padding: 2rem 3rem;
     }
+    /* portfolio section */
+    /* .description>* {
+        transform: translateY(-10px);
+        transition: 0.25s;
+    } */
+    .description h4 {
+        font-size: 200%;
+    }
+    .description a {
+        font-size: 130%;
+    }
+    /* contact-section */
     .number {
         padding-top: 1rem;
+    }
+    .numberShow .clicked .phone-number {
+        display: inline;
+    }
+    .numberShow .notclicked .phone-number {
+        display: none;
     }
 }
 
 @media screen and (max-width:480px) {
-    .image-section {
-        background-attachment: unset;
-        background-size: 480px;
-        padding: 27%;
+    h1 {
+        font-size: calc(3.375rem + 1.5vw);
     }
-    .about-container {
-        margin: 2rem;
-        padding: 1rem;
-    }
-    .tech .text-center p {
-        display: none;
-    }
-    #projects {
-        margin-bottom: 0 !important;
-    }
+    /* nav-bar */
     .navbar-brand img {
         width: 80%;
         object-fit: contain;
@@ -483,5 +480,65 @@ Media Queries
     .navbar-brand {
         margin: 0 !important;
         padding: 0 !important;
+    }
+    /* hero & about section */
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero-image {
+        width: 100vw;
+        border: none !important;
+    }
+    .about-content {
+        text-align: start;
+    }
+    /* fixed image-section */
+    .image-section {
+        background-attachment: unset;
+        padding: 24%;
+    }
+    /* portfolio section */
+    #projects {
+        margin-bottom: 0 !important;
+    }
+    .tech .text-center p {
+        display: none;
+    }
+    .tech {
+        margin-bottom: 3rem;
+    }
+    .description h4 {
+        font-size: 150%;
+    }
+    .description a {
+        font-size: 90%;
+    }
+    /* contact-section */
+    .email {
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: calc(2.375rem + 1.5vw);
+    }
+    /* contact-section */
+    .contact-icons {
+        margin-top: 3rem;
+    }
+    .fs-5 {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* contact-section */
+    .contact-icon-box {
+        padding: 0.7em 0.8em;
+    }
+    .contact-icons {
+        margin-top: 2rem;
     }
 }

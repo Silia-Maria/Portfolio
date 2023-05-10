@@ -34,16 +34,15 @@ function showButton() {
 
 
 // Projects Array
-
 const projects = [{
-        // First Project - Foodblog
-        name: "Foodblog",
-        img: "foodblog.jpg",
-        url: "Projects/Foodblog"
+        // Angular (E-commerce) - Flower Shop
+        name: "flùr - Flower shop",
+        img: "flur.png",
+        url: "Projects/flower-shop"
     },
     {
         // Restaurant - typescript
-        name: "Restaurant WildFood",
+        name: "WildFood - Restaurant",
         img: "restaurant.png",
         url: "Projects/Restaurant-WildFood/pages"
     },
@@ -60,16 +59,14 @@ const projects = [{
         url: "path"
     },
     {
-        // Angular (E-commerce) - Flower Shop
-        name: "flùr - Flower shop",
-        img: "flur.png",
-        url: "Projects/flower-shop"
+        // First Project - Foodblog
+        name: "Foodblog",
+        img: "foodblog.jpg",
+        url: "Projects/Foodblog"
     }
-
 ]
 
 // Print projects
-
 let projectRow = document.getElementById("portfolio");
 
 for (let project of projects) {
@@ -80,5 +77,77 @@ for (let project of projects) {
         <a class="live-site" href="${project.url}" target="_blank">See Live Site</a>
     </div>
 </div>`
-
 }
+
+//Portfolio section for smaller screens:
+var items = document.querySelectorAll('.item');
+if (window.innerWidth <= 768) {
+    items.forEach(function(item) {
+        item.addEventListener('click', function() {
+            item.classList.toggle('click-effect');
+            if (item.classList.contains('click-effect')) {
+                item.querySelector('.description').style.visibility = "visible";
+                item.style.transform = "scale(1.2)";
+            } else {
+
+                item.querySelector('.description').style.visibility = "hidden";
+                item.style.transform = "scale(1)";
+            }
+        })
+    })
+}
+
+//Technologie array
+const technologies = [{
+        name: 'html5',
+        icon: 'fa-html5',
+    },
+    {
+        name: 'css',
+        icon: 'fa-css3-alt',
+    },
+    {
+        name: 'scss',
+        icon: 'fa-sass',
+    },
+    {
+        name: 'Bootstrap',
+        icon: 'fa-bootstrap',
+    },
+    {
+        name: 'Javascript',
+        icon: 'fa-square-js',
+    },
+    {
+        name: 'angular',
+        icon: 'fa-angular',
+    },
+    {
+        name: 'php',
+        icon: 'fa-php',
+    },
+    {
+        name: 'symfony',
+        icon: 'fa-symfony',
+    }
+]
+
+//Print technologies
+let techRow = document.getElementById("tech");
+for (let tech of technologies) {
+    techRow.innerHTML += `<div class="text-center"><i class="fa-brands ${tech.icon} fs-2"></i>
+    <p>${tech.name}</p>
+</div>`;
+}
+
+//Show phone number for small screens
+var phoneLink = document.getElementById("phone-link");
+phoneLink.addEventListener("click", function() {
+    phoneLink.classList.toggle("clicked");
+    // If the link is clicked and the clicked class is present, show the phone number
+    if (phoneLink.classList.contains("clicked")) {
+        phoneLink.querySelector(".phone-number").style.display = "inline";
+    } else {
+        phoneLink.querySelector(".phone-number").style.display = "none";
+    }
+});
