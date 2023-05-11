@@ -112,6 +112,7 @@ Right Side
 .section {
     border: 0.5px solid black;
     margin-top: 1.5em;
+    margin-bottom: 1em;
     padding: 1em;
 }
 
@@ -144,9 +145,10 @@ Right Side
 
 /* Reservation */
 
-.reservation {
+
+/* .reservation {
     margin: 2em;
-}
+} */
 
 .reservation label {
     margin-bottom: 1em;
@@ -164,12 +166,21 @@ Right Side
     padding: 0.5em;
     width: 100%;
     border: 1px solid black;
+    border-radius: 0;
 }
 
 .reservation .button {
     width: 100%;
     color: white;
     background-color: #61764B;
+}
+
+.reservation label input[type="date"],
+.reservation label select {
+    width: 100%;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
 }
 
 
@@ -204,6 +215,14 @@ Media Queeries
         width: 100vw;
         object-fit: cover;
         height: 100vh;
+    }
+    .row {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .row>* {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
