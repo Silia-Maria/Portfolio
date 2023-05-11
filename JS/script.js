@@ -88,10 +88,11 @@ if (window.innerWidth <= 768) {
             if (item.classList.contains('click-effect')) {
                 item.querySelector('.description').style.visibility = "visible";
                 item.style.transform = "scale(1.2)";
-            } else {
 
+            } else {
                 item.querySelector('.description').style.visibility = "hidden";
                 item.style.transform = "scale(1)";
+
             }
         })
     })
