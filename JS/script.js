@@ -71,7 +71,7 @@ let projectRow = document.getElementById("portfolio");
 
 for (let project of projects) {
     projectRow.innerHTML += `<div class="item col mb-3">
-    <img class="portfolio_image" src="../images/${project.img}" alt="">
+    <img class="portfolio_image" src="images/${project.img}" alt="">
     <div class="description">
         <h4>${project.name}</h4>
         <a class="live-site" href="${project.url}" target="_blank">See Live Site</a>
@@ -81,18 +81,26 @@ for (let project of projects) {
 
 //Portfolio section for smaller screens:
 var items = document.querySelectorAll('.item');
+
 if (window.innerWidth <= 768) {
     items.forEach(function(item) {
         item.addEventListener('click', function() {
             item.classList.toggle('click-effect');
+            var description = item.querySelector('.description');
+
             if (item.classList.contains('click-effect')) {
-                item.querySelector('.description').style.visibility = "visible";
-                item.style.transform = "scale(1.2)";
+                description.style.visibility = "visible";
+                item.style.transform = "scale(1)";
+                description.querySelectorAll('*').forEach(function(el) {
+                    el.style.transform = "translateY(0)";
+                });
 
             } else {
-                item.querySelector('.description').style.visibility = "hidden";
+                description.style.visibility = "hidden";
                 item.style.transform = "scale(1)";
-
+                description.querySelectorAll('*').forEach(function(el) {
+                    el.style.transform = "translateY(30px)";
+                });
             }
         })
     })
