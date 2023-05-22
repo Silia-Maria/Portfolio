@@ -319,37 +319,47 @@ h3 {
 About
 ---------------------------
 */
-.flex-about {
+.about {
   max-width: 100%;
   padding: 3%;
   margin: 3% 2% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.flex-about .text {
-  width: 30%;
-}
-
-.flex-about .text h1 {
-  margin: 5% 0%;
-  font-weight: 100;
-}
-
-.flex-about .text p {
+.about .text p {
   line-height: 150%;
-  margin-bottom: 5%;
+  margin-bottom: 1rem;
   text-align: justify;
 }
 
-.flex-about .about-image {
-  width: 60%;
-  background-image: url(./images/about-me.jpg);
-  background-size: cover;
-  border-radius: 2%;
+.about .about-image {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.about .about-image div {
+  position: absolute;
+  top: 30%;
+  font-weight: 100;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about .about-image div h1 {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.about .about-image div h3 {
+  padding: 0 9rem;
+}
+
+.about-image img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .image-fixed {
@@ -415,12 +425,19 @@ Media Queries
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .about-image {
-    width: 100%;
+  .about .about-image div h1 {
+    font-size: 160%;
+  }
+  .about .about-image div h3 {
+    font-size: 120%;
+    padding: 0 4rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+  html {
+    font-size: 75%;
+  }
   .grid {
     display: -ms-grid;
     display: grid;
@@ -433,6 +450,38 @@ Media Queries
   }
   .top-nav {
     font-size: 70%;
+  }
+  .flex-ingredients {
+    display: block;
+  }
+  .flex-ingredients .method,
+  .flex-ingredients .ingredients {
+    width: 100%;
+  }
+  .method {
+    margin-top: 2rem;
+  }
+  .about .about-image div {
+    padding: 1rem 0;
+  }
+  .about .about-image div h1 {
+    font-size: 120%;
+  }
+  .about .about-image div h3 {
+    font-size: 90%;
+    padding: 0 3rem;
+  }
+  .cooking-class input {
+    width: 50%;
+  }
+  .cooking-class h1 {
+    font-size: 140%;
+  }
+  .cooking-class h2 {
+    font-size: 100%;
+  }
+  .cooking-class p {
+    margin-top: 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

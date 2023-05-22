@@ -288,30 +288,43 @@ About
 ---------------------------
 */
             
-            .flex-about {
+            .about {
                 max-width: 100%;
                 padding: 3%;
                 margin: 3% 2% 0;
-                display: flex;
-                justify-content: space-around;
                 .text {
-                    width: 30%;
-                    h1 {
-                        margin: 5% 0%;
-                        font-weight: 100;
-                    }
                     p {
                         line-height: 150%;
-                        margin-bottom: 5%;
+                        margin-bottom: 1rem;
                         text-align: justify;
                     }
                 }
                 .about-image {
-                    width: 60%;
-                    background-image: url(./images/about-me.jpg);
-                    background-size: cover;
-                    border-radius: 2%;
+                    position: relative;
+                    margin-bottom: 1rem;
+                    div {
+                        position: absolute;
+                        top: 30%;
+                        font-weight: 100;
+                        width: 100%;
+                        background-color: hsla(93, 88%, 100%, 0.45);
+                        padding: 4rem 0;
+                        text-align: center;
+                        h1 {
+                            font-weight: 100;
+                            margin-bottom: 1rem;
+                        }
+                        h3 {
+                            padding: 0 9rem;
+                        }
+                    }
                 }
+            }
+            
+            .about-image img {
+                position: relative;
+                object-fit: cover;
+                width: 100%;
             }
             
             .image-fixed {
@@ -370,15 +383,23 @@ Media Queries
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                 }
-                // body {
-                //     font-size: 80%;
-                // }
-                .about-image {
-                    width: 100%;
+                .about {
+                    .about-image div {
+                        h1 {
+                            font-size: 160%;
+                        }
+                        h3 {
+                            font-size: 120%;
+                            padding: 0 4rem;
+                        }
+                    }
                 }
             }
             
             @media screen and (max-width: 480px) {
+                html {
+                    font-size: 75%;
+                }
                 .grid {
                     display: grid;
                     grid-template-columns: 1fr;
@@ -390,7 +411,44 @@ Media Queries
                 .top-nav {
                     font-size: 70%;
                 }
-                // body {
-                //     font-size: 60%;
-                // }
+                // recipe of the month
+                .flex-ingredients {
+                    display: block;
+                    .method,
+                    .ingredients {
+                        width: 100%;
+                    }
+                }
+                .method {
+                    margin-top: 2rem;
+                }
+                // about page
+                .about {
+                    .about-image {
+                        div {
+                            padding: 1rem 0;
+                            h1 {
+                                font-size: 120%;
+                            }
+                            h3 {
+                                font-size: 90%;
+                                padding: 0 3rem;
+                            }
+                        }
+                    }
+                }
+                .cooking-class {
+                    input {
+                        width: 50%;
+                    }
+                    h1 {
+                        font-size: 140%;
+                    }
+                    h2 {
+                        font-size: 100%;
+                    }
+                    p {
+                        margin-top: 2rem;
+                    }
+                }
             }
