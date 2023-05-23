@@ -247,14 +247,11 @@ Portfolio
 }
 
 .item {
-    /* height: auto; */
     padding: 1rem;
     transition: 0.5s;
 }
 
 .item:hover {
-    transform: scale(1.2);
-    transition: 0.3s;
     z-index: 99;
 }
 
@@ -277,14 +274,6 @@ Portfolio
 .description>* {
     transform: translateY(30px);
     transition: transform 0.25s;
-}
-
-.item:hover .description {
-    visibility: visible;
-}
-
-.description:hover>* {
-    transform: translateY(0);
 }
 
 .live-site {
@@ -466,9 +455,9 @@ Media Queries
     .description h4 {
         font-size: 190%;
     }
-    /* .description .live-site {
+    .description .live-site {
         font-size: 100%;
-    } */
+    }
 }
 
 @media screen and (max-width: 320px) {

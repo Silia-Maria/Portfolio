@@ -67,6 +67,7 @@ const projects = [{
 ]
 
 // Print projects
+
 let projectRow = document.getElementById("portfolio");
 
 for (let project of projects) {
@@ -79,32 +80,88 @@ for (let project of projects) {
 </div>`
 }
 
-//Portfolio section for smaller screens:
-var items = document.querySelectorAll('.item');
 
-if (window.innerWidth <= 768) {
+// Function to add hover-effect bigger screens:
+function addHoverEffect() {
+    var items = document.querySelectorAll('.item');
+
     items.forEach(function(item) {
+        var description = item.querySelector('.description');
+
+        item.addEventListener('mouseover', function() {
+            item.classList.add('hover-effect');
+            description.style.visibility = "visible";
+            item.style.transform = "scale(1.2)";
+            description.querySelectorAll('*').forEach(function(el) {
+                el.style.transform = "translateY(0px)";
+            });
+        });
+        item.addEventListener('mouseout', function() {
+            item.classList.remove('hover-effect');
+            description.style.visibility = "hidden";
+            item.style.transform = "scale(1)";
+            description.querySelectorAll('*').forEach(function(el) {
+                el.style.transform = "translateY(30px)";
+            });
+        });
+    });
+}
+
+// Function Click effect smaller screens:
+function addClickEffect() {
+    var items = document.querySelectorAll('.item');
+
+
+    items.forEach(function(item) {
+        var description = item.querySelector('.description');
         item.addEventListener('click', function() {
-            item.classList.toggle('click-effect');
-            var description = item.querySelector('.description');
+            var isActive = item.classList.contains('click-effect');
 
-            if (item.classList.contains('click-effect')) {
-                description.style.visibility = "visible";
-                item.style.transform = "scale(1)";
-                description.querySelectorAll('*').forEach(function(el) {
-                    el.style.transform = "translateY(0)";
-                });
-
-            } else {
+            items.forEach(function(item) {
+                item.classList.remove('click-effect');
+                item.classList.remove('hover-effect');
                 description.style.visibility = "hidden";
                 item.style.transform = "scale(1)";
                 description.querySelectorAll('*').forEach(function(el) {
                     el.style.transform = "translateY(30px)";
                 });
+            });
+            if (!isActive) {
+                item.classList.add('click-effect');
+                description.style.visibility = "visible";
+                item.style.transform = "scale(1)";
+                description.querySelectorAll('*').forEach(function(el) {
+                    el.style.transform = "translateY(0)";
+                });
             }
         })
     })
 }
+
+// Check screens size
+function addEffectsBasedOnScreen() {
+    var items = document.querySelectorAll('.item');
+
+    if (window.innerWidth <= 768) {
+        items.forEach(function(item) {
+            item.classList.remove('hover-effect');
+        });
+        addClickEffect();
+    } else {
+        items.forEach(function(item) {
+            item.classList.remove('click-effect');
+        })
+        addHoverEffect();
+    }
+}
+
+addEffectsBasedOnScreen();
+window.addEventListener('resize', function() {
+    clearTimeout(window.resizedFinished);
+    window.resizedFinished = setTimeout(function() {
+        addEffectsBasedOnScreen();
+    }, 250);
+});
 
 //Technologie array
 const technologies = [{
