@@ -461,6 +461,9 @@ Media Queries
   .method {
     margin-top: 2rem;
   }
+  .jamie {
+    padding: 0;
+  }
   .about .about-image div {
     padding: 1rem 0;
   }
