@@ -418,7 +418,11 @@ Media Queries
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .recipe-img,
+  .image-fixed {
+    background-attachment: scroll;
+  }
   .grid {
     display: -ms-grid;
     display: grid;
@@ -447,9 +451,6 @@ Media Queries
   }
   .grid .grid-item {
     margin-bottom: 5%;
-  }
-  .top-nav {
-    font-size: 70%;
   }
   .flex-ingredients {
     display: block;
