@@ -75,12 +75,10 @@
                 height: 100%;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(3, 1fr);
-                // grid-template-columns: 1fr 1fr 1fr;
                 gap: 2em;
                 .grid-item {
                     padding-top: 70%;
                     .label {
-                        // border: 1px solid red;
                         padding: 5% 0;
                         text-align: center;
                         background-color: $bg-color-labels;
@@ -150,7 +148,6 @@
                     text-align: center;
                     padding-top: 1%;
                     a {
-                        // border: 2px solid red;
                         color: $font-color-footer-content;
                         text-decoration: none;
                         margin: 3% 7% 0% 7%;

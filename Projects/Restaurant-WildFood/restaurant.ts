@@ -57,7 +57,7 @@ const currencyFormater = new Intl.NumberFormat("de-AT", {
 })
 
 // print array dishes
-for (let dish of dishes) {
+    for (let dish of dishes) {
     let result = `<div>
     <div class="d-flex justify-content-between"> 
     <p><b>${dish.name}</b></p>
@@ -81,6 +81,7 @@ for (let dish of dishes) {
     }
 
 }
+
 
 //Drinks
 let drinks: Array<{ type: string, name: string, price: number }> = [{
@@ -140,7 +141,7 @@ let drinks: Array<{ type: string, name: string, price: number }> = [{
 
 
 // Print array Drinks
-for (let drink of drinks) {
+    for (let drink of drinks) {
     let result = `<div>
     <div class="d-flex justify-content-between"> 
     <p>${drink.name}</p>
