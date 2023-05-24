@@ -56,7 +56,7 @@ const projects = [{
         // Library - PHP
         name: "Vienna City Library",
         img: "library1.png",
-        url: "path"
+        url: "Projects/library/index.php"
     },
     {
         // First Project - Foodblog
